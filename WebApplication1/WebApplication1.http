@@ -1,0 +1,52 @@
+@WebApplication1_HostAddress = http://localhost:5014
+
+GET {{WebApplication1_HostAddress}}/api/Employees
+Accept: application/json
+
+###
+
+POST {{WebApplication1_HostAddress}}/api/Employees
+Content-Type: application/json
+
+{
+  "name": "Adam",
+  "department": "IT",
+  "dob": "2002-05-10",
+  "joinDate": "2026-08-24"
+}
+
+###
+
+GET {{WebApplication1_HostAddress}}/api/Employees/2
+Accept: application/json
+
+###
+
+PUT {{WebApplication1_HostAddress}}/api/Employees/7
+Content-Type: application/json
+
+{
+  "name": "Youmhfgjdfhsssef",
+  "department": "Engineering",
+  "dob": "2000-07-15",
+  "joinDate": "2026-08-24"
+}
+
+###
+
+DELETE {{WebApplication1_HostAddress}}/api/Employees/7
+
+###
+
+POST {{WebApplication1_HostAddress}}/api/attendance/checkin/1
+
+###
+
+POST {{WebApplication1_HostAddress}}/api/attendance/checkout/1
+
+###
+
+GET {{WebApplication1_HostAddress}}/api/attendance/employee/3
+
+
+
